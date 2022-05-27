@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using Course.Entities;
 
 namespace Course {
     class Program {
@@ -131,12 +132,20 @@ namespace Course {
             }
         }
 
+        static void Inheritance()
+        {
+            BusinessAccount account = new BusinessAccount(8010, "Arthur Cesar", 100.00, 500.0);
+
+            Console.WriteLine(account.Balance);
+        }
+
         static void Main(string[] args) {
             //Exercicio1();
             //Exercicio2();
             //Exercicio3();
             //Exercicio4();
-            ExercicioMatriz();
+            //ExercicioMatriz();
+            Inheritance();
         }
     }
 }
